@@ -1,0 +1,108 @@
+.recommendContainer .banners {
+  width: 100%;
+  height: 350rpx;
+}
+.recommendContainer .banners .bannerImg {
+  width: 100%;
+  height: 350rpx;
+}
+.recommendContainer .policyList {
+  display: flex;
+}
+.recommendContainer .policyList .policyItem {
+  flex: 1;
+  text-align: center;
+}
+.recommendContainer .policyList .policyItem .policyImg {
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
+.recommendContainer .policyList .policyItem .content {
+  font-size: 24rpx;
+  vertical-align: middle;
+}
+.recommendContainer .kingKongList {
+  display: flex;
+  flex-wrap: wrap;
+/* 
+				nowrap
+				    flex 的元素被摆放到到一行，这可能导致 flex 容器溢出。
+					cross-start 会根据 flex-direction 的值等价于 start 或 before。为该属性的默认值。
+				wrap
+				    flex 元素 被打断到多个行中。
+					cross-start 会根据 flex-direction 的值等价于 start 或before。
+					cross-end 为确定的 cross-start 的另一端。
+				wrap-reverse
+				    和 wrap 的行为一样，但是 cross-start 和 cross-end 互换。
+			 */
+}
+.recommendContainer .kingKongList .kingKongItem {
+  display: flex;
+  flex-direction: column;
+/* 
+					row
+						flex 容器的主轴被定义为与文本方向相同。主轴起点和主轴终点与内容方向相同。
+					row-reverse
+						表现和 row 相同，但是置换了主轴起点和主轴终点
+					column
+						flex 容器的主轴和块轴相同。主轴起点与主轴终点和书写模式的前后点相同
+					column-reverse
+						表现和column相同，但是置换了主轴起点和主轴终点
+				 */
+  width: 20%;
+}
+.recommendContainer .kingKongList .kingKongItem .kingImage {
+  width: 110rpx;
+  height: 110rpx;
+  margin: 20rpx 0;
+}
+.recommendContainer .kingKongList .kingKongItem .kingContent {
+  font-size: 26rpx;
+}
+.recommendContainer .categoryModuleContainer .categoryItem {
+  margin-bottom: 20rpx;
+}
+.recommendContainer .categoryModuleContainer .categoryItem .titlePic {
+  width: 100%;
+  height: 370rpx;
+}
+.recommendContainer .categoryModuleContainer .shopListScroll {
+  white-space: nowrap;
+/* 
+				normal
+					连续的空白符会被合并，换行符会被当作空白符来处理。换行在填充「行框盒子 (line boxes)」时是必要。
+				*/
+}
+.recommendContainer .categoryModuleContainer .shopListScroll .shopItem {
+  width: 200rpx;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 20rpx;
+}
+.recommendContainer .categoryModuleContainer .shopListScroll .shopItem.more {
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 28rpx;
+  line-height: 200rpx;
+  text-align: center;
+  background: #eee;
+}
+.recommendContainer .categoryModuleContainer .shopListScroll .shopItem .shopImg {
+  width: 200rpx;
+  height: 200rpx;
+  background: #eee;
+}
+.recommendContainer .categoryModuleContainer .shopListScroll .shopItem .shopInfo {
+  font-size: 26rpx;
+  white-space: pre-wrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.test {
+  font-size: 0;
+}
+
